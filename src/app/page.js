@@ -1,113 +1,299 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <>
+    <section className=" max-w-[1500px] m-auto">
+       <section className="  py-4 px-10 font-medium ">
+           <div className="bg-[#ffffff] grid grid-cols-12 md:h-[50vh]">
+           <div className=" col-span-9 py-4 px-10 flex flex-col justify-between ">
+              <h1 className=" text-[60px] leading-[1.3] font-Medium_Grotesk">SnapBack Caps are Back with a new look! </h1>
+              <div>
+              <button className=" underline">
+                EXPLORE THE BLOCK
+              </button>
+              </div>
+            </div>
+            <div className=" col-span-3 grid overflow-hidden grid-rows-5">
+              <div className="bg-[#010101] text-white row-span-2 py-10 px-6">
+                <p>Why champion Afro Music With Our New Banana Tees</p>
+              </div>
+              <div className=" overflow-hidden row-span-2">
+                <div className=" overflow-hidden ">
+                <Image
+                className="object-center"
+                  src="https://img.freepik.com/free-photo/medium-shot-man-posing_23-2149028762.jpg?t=st=1724242025~exp=1724245625~hmac=c21c806b4bc53ab2723a9ed47c39dc94bcc2f1ab72fb29f442503a9d0247e906&w=996"
+                  height={1000}
+                width={1000}
+                alt="prod"
+                />
+                </div>
+              </div>
+              <div className="bg-[#2BB1E3] flex items-center px-6 text-white">
+                  <p>CONTINUE READING</p>
+              </div>
+            </div>
+           </div>
+           <div className=" relative py-10">
+            <div className=" absolute z-[-1] text-white top-0 left-0 bottom-0 right-0 flex justify-center pt-28">
+              <h1 className=" text-[10vw] font-Light_Grotesk">LATEST COLLECTION</h1>
+            </div>
+             <div className=" z-20 p-0  top-0 left-0 right-0 bottom-0 w-[1000px] m-auto  rotate-12">
+               <Image
+               src='/images/newcap.png'
+               alt="cap"
+               width={1000}
+               height={500}
+               />
+             </div>
+             <div className=" absolute bottom-[35%] flex justify-center right-0 left-0">
+               <div className="w-[80px] h-[80px] bg-[#E33340] rounded-full grid place-content-center text-white">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                </svg>
+
+               </div>
+             </div>
+           </div>
+       </section>
+       <section className=" py-10 px-10 text-white text-transform">
+        <div className=" grid grid-cols-12  gap-1 gap-y-10">
+        
+          <div className=" col-span-3   ">
+            <div className="h-[350px] overflow-hidden relative group">
+            <div className=" overflow-hidden ">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+                src="https://i.pinimg.com/474x/02/9b/99/029b99ef6dfb6553a28f2f01cb059408.jpg"
+                height={1000}
+                width={1000}
+                alt="prod"
+              />
+            </div>
+           <div className="bg-[#2BB1E3] absolute top-3 right-3 py-2 px-3">
+               <p className=" text-[15px] font-Medium_Grotesk">NEW </p>
+               
+                
+          
+            </div>
+             <div className=" absolute bottom-[-50px] top-[100%] left-0 right-0 group-hover:top-0 transition-all duration-75 grid place-content-center bg-[#02020211]  "> 
+              <button className="bg-[#fff] w-full h-[50px] text-[20px] font-Medium_Grotesk px-8 text-black">
+                add to cart
+              </button>
+            </div>
+            </div>
+           
+            <div>
+              <p className=" text-[18px]">Oversize LE Shirt</p>
+              <p>$300</p>
+            </div>
+          </div>
+          
+          <div className=" col-span-3  overflow-hidden ">
+            <div className="h-[350px] relative group overflow-hidden">
+            <div className=" overflow-hidden ">
+            <Image
+          
+                src="https://i.pinimg.com/564x/47/10/ed/4710ed11de11aae995f7db9562f44d50.jpg"
+                height={1000}
+                width={1000}
+                alt="prod"
+              />
+            </div>
+           <div className="bg-[#2BB1E3] absolute top-3 right-3 py-2 px-3">
+               <p className=" text-[15px] font-Medium_Grotesk">NEW </p>
+               
+                
+          
+            </div>
+             <div className=" absolute bottom-[-50px] top-[100%] left-0 right-0 group-hover:top-0 transition-all duration-75 grid place-content-center bg-[#02020211]  "> 
+              <button className="bg-[#fff] w-full h-[50px] text-[20px] font-Medium_Grotesk px-8 text-black">
+                add to cart
+              </button>
+            </div>
+            </div>
+           
+            <div>
+              <p className=" text-[18px]">Oversize LE Shirt</p>
+              <p>$300</p>
+            </div>
+          </div>
+          <div className=" col-span-3  overflow-hidden ">
+            <div className="h-[350px] group relative overflow-hidden">
+            <div className=" overflow-hidden">
+            <Image
+                src="https://i.pinimg.com/474x/43/40/45/43404580a6f19f5607c7cd52ca22eccd.jpg"
+                height={1000}
+                width={1000}
+                alt="prod"
+              />
+            </div>
+            <div className="bg-[#2BB1E3] absolute top-3 right-3 py-2 px-3">
+               <p className=" text-[15px] font-Medium_Grotesk">NEW </p>
+               
+                
+          
+            </div>
+            <div className=" absolute bottom-[-50px] top-[100%] left-0 right-0 group-hover:top-0 transition-all duration-75 grid place-content-center bg-[#02020211]  "> 
+              <button className="bg-[#fff] w-full h-[50px] text-[20px] font-Medium_Grotesk px-8 text-black">
+                add to cart
+              </button>
+            </div>
+            </div>
+            
+            <div>
+              <p className=" text-[18px]">Oversize LE Shirt</p>
+              <p>$300</p>
+            </div>
+          </div>
+          <div className=" col-span-3  overflow-hidden ">
+            <div className="h-[350px] group relative overflow-hidden">
+            <div className=" overflow-hidden">
+            <Image
+                src="https://i.pinimg.com/736x/6e/3f/a8/6e3fa8720f1f8476c39ed97d59bd3f92.jpg"
+                height={1000}
+                width={1000}
+                alt="prod"
+              />
+            </div>
+           <div className="bg-[#2BB1E3] absolute top-3 right-3 py-2 px-3">
+               <p className=" text-[15px] font-Medium_Grotesk">NEW </p>
+               
+                
+          
+            </div>
+             <div className=" absolute bottom-[-50px] top-[100%] left-0 right-0 group-hover:top-0 transition-all duration-75 grid place-content-center bg-[#02020211]  "> 
+              <button className="bg-[#fff] w-full h-[50px] text-[20px] font-Medium_Grotesk px-8 text-black">
+                add to cart
+              </button>
+            </div>
+            </div>
+            
+            <div>
+              <p className=" text-[18px]">Oversize LE Shirt</p>
+              <p>$300</p>
+            </div>
+          </div>
+          
         </div>
-      </div>
+       </section>
+       <section className="py-10 px-10 ">
+        <div className="text-center">
+          <h1 className=" text-[50px] max-w-[900px] m-auto font-Regular_Grotesk leading-[1.2] py-10 text-white">THE PERFECT BLEND OF HIGH FASHION 
+          AND STREET WEAR FOR YOU.</h1>
+        </div>
+        <div className="grid grid-cols-12 gap-4 h-[550px]">
+          <div className=" col-span-6 bg-[url('https://i.pinimg.com/474x/ce/f9/fd/cef9fd633d81fdc30e4f87a2f61c27d5.jpg')]"></div>
+          <div className=" col-span-6 bg-[url('https://i.pinimg.com/474x/ca/58/41/ca5841d5c64f71169ec408d8e641347a.jpg')] bg-cover bg-no-repeat"></div>
+        </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+       </section>
+       <section className=" py-10 px-10 text-white text-transform">
+        <h1 className=" font-Regular_Grotesk text-[50px] py-10 text-center">EXPERIENCING YOUR LIMITS YET?</h1>
+        <div className=" grid grid-cols-12  gap-1 gap-y-10">
+          <div className=" col-span-4   ">
+            <div className="h-[400px] overflow-hidden relative group">
+            <div className=" overflow-hidden ">
+            <Image
+                src="https://i.pinimg.com/474x/02/9b/99/029b99ef6dfb6553a28f2f01cb059408.jpg"
+                height={1000}
+                width={1000}
+                alt="prod"
+              />
+            </div>
+           
+             <div className=" absolute bottom-[-50px] top-[100%] left-0 right-0 group-hover:top-0 transition-all duration-75 grid place-content-center bg-[#02020211]  "> 
+              <button className="bg-[#fff] w-full h-[50px] text-[20px] font-Medium_Grotesk px-8 text-black">
+                add to cart
+              </button>
+            </div>
+            </div>
+           
+            <div>
+              <p className=" text-[18px]">Oversize LE Shirt</p>
+              <p>$300</p>
+            </div>
+          </div>
+          
+          <div className=" col-span-4  overflow-hidden ">
+            <div className="h-[400px] relative group overflow-hidden">
+            <div className=" overflow-hidden ">
+            <Image
+          
+                src="https://i.pinimg.com/564x/47/10/ed/4710ed11de11aae995f7db9562f44d50.jpg"
+                height={1000}
+                width={1000}
+                alt="prod"
+              />
+            </div>
+           
+             <div className=" absolute bottom-[-50px] top-[100%] left-0 right-0 group-hover:top-0 transition-all duration-75 grid place-content-center bg-[#02020211]  "> 
+              <button className="bg-[#fff] w-full h-[50px] text-[20px] font-Medium_Grotesk px-8 text-black">
+                add to cart
+              </button>
+            </div>
+            </div>
+           
+            <div>
+              <p className=" text-[18px]">Oversize LE Shirt</p>
+              <p>$300</p>
+            </div>
+          </div>
+          <div className=" col-span-4  overflow-hidden ">
+            <div className="h-[400px] group relative overflow-hidden">
+            <div className=" overflow-hidden">
+            <Image
+                src="https://i.pinimg.com/564x/39/2b/b5/392bb544dce068cc725c91ef8197a6bd.jpg"
+                height={1000}
+                width={1000}
+                alt="prod"
+              />
+            </div>
+           
+             <div className=" absolute bottom-[-50px] top-[100%] left-0 right-0 group-hover:top-0 transition-all duration-75 grid place-content-center bg-[#02020211]  "> 
+              <button className="bg-[#fff] w-full h-[50px] text-[20px] font-Medium_Grotesk px-8 text-black">
+                add to cart
+              </button>
+            </div>
+            </div>
+            
+            <div>
+              <p className=" text-[18px]">Oversize LE Shirt</p>
+              <p>$300</p>
+            </div>
+          </div>
+        
+        </div>
+       </section>
+       <section className="py-20 text-white px-10">
+        <div className="h-screen  p-10 bg-[#E33340] overflow-hidden relative ">
+          <div className=" flex justify-center absolute top-[-50px] right-0 left-0 bottom-[-50px] z-[1]">
+            <div className="">
+            <Image
+              className=" h-full w-full"
+                src='/images/greyim@2x.png'
+                alt="imhg"
+                width={1000}
+                height={1000}
+              />
+            </div>
+          </div>
+          <div className=" z-20 relative flex flex-col items-center font-Medium_Grotesk">
+            <h1 className=" text-[27vw] font-Semibold_Grotesk">GREY</h1>
+            <div className="flex justify-between w-full items-center">
+              <p>THE PERFECT BLEND OF HIGH FASHION </p>
+              <button className=" bg-white w-[300px] rounded-[30px] py-2 text-black text-[30px]">Shop GRAY.</button>
+              <p>
+ 
+                AND STREET-WEAR FOR YOU.
+              </p>
+            </div>
+          </div>
+        </div>
+       </section>
+      
+    </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }

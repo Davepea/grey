@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -24,6 +24,79 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+body{
+  background:  #2A2B30;
+}
+img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+@layer base {
+  @font-face {
+    font-family: 'General Sans';
+    src: 
+    url('../Fonts/WEB/fonts/GeneralSans-Variable.woff2') format('woff2'),
+    url('../Fonts/WEB/fonts/GeneralSans-Variable.woff') format('woff'),
+    url('../Fonts/WEB/fonts/GeneralSans-Variable.ttf') format('truetype'),
+    ;
+  }
+
+  @font-face {
+    font-family: 'Extralight Grotesk';
+    src: 
+    url('../Fonts/WEB/fonts/ClashGrotesk-Extralight.woff2') format('woff2'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Extralight.woff') format('woff'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Extralight.ttf') format('truetype')
+    ;
+  }
+
+  @font-face {
+    font-family: 'Light Grotesk';
+    src: 
+    url('../Fonts/WEB/fonts/ClashGrotesk-Light.woff2') format('woff2'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Light.woff') format('woff'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Light.ttf') format('truetype')
+    ;
+  }
+
+  @font-face {
+    font-family: 'Regular Grotesk';
+    src: 
+    url('../Fonts/WEB/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Regular.woff') format('woff'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Regular.ttf') format('truetype')
+    ;
+  }
+
+  @font-face {
+    font-family: 'Medium Grotesk';
+    src: 
+    url('../Fonts/WEB/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Medium.woff') format('woff'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Medium.ttf') format('truetype')
+    ;
+  }
+  
+  @font-face {
+    font-family: 'Semibold Grotesk';
+    src: 
+    url('../Fonts/WEB/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Semibold.woff') format('woff'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Semibold.ttf') format('truetype')
+    ;
+  }
+  
+  @font-face {
+    font-family: 'Bold Grotesk';
+    src: 
+    url('../Fonts/WEB/fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Bold.woff') format('woff'),
+    url('../Fonts/WEB/fonts/ClashGrotesk-Bold.ttf') format('truetype')
+    ;
+  }
 }
 
 @layer utilities {
