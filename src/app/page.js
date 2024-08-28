@@ -179,7 +179,7 @@ export default function Home() {
        </section>
        <section className="py-10 px-10 ">
         <div className="text-center">
-          <h1 className=" text-[50px] max-w-[900px] m-auto font-Regular_Grotesk leading-[1.2] py-10 text-white">THE PERFECT BLEND OF HIGH FASHION 
+          <h1 className=" text-[50px] max-w-[900px] m-auto font-Regular_Grotesk leading-[1.2] py-10 text-white">THE PERFECT -BLEND OF HIGH FASHION 
           AND STREET WEAR FOR YOU.</h1>
         </div>
         <div className="grid grid-cols-12 gap-4 h-[550px]">
